@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>title</title>
+  <title>Guessing Game</title>
 </head>
-  <body>
-    <h1>Welcome to Code 201!</h1>
-  </body>
+<body>
+  <h1>Welcome to Code 201!</h1>
+</body>
+<!-- THis is the block of code that is going to ask and then display the contents ofr questions and answers -->
 <script>
-  var user = prompt('What is your name?');
-  console.log('user: ' + user);
-  alert('Hi there ' + user + ' I\'m going to ask you a Question.');
-  var answer = prompt(user + ', this is a yes/no question. Please answer with a Y or N. Do you love to code?');
+var user = prompt('What is your name?');
+console.log('user: ' + user);
+alert('Hi there ' + user + ' I\'m going to ask you a Question.');
+var answer = prompt(user + ', this is a yes/no question. Please answer with a Y or N. Do you love to code?');
+console.log('users answer:' + answer);
+if (answer === 'N') {
+  alert('nice try - I love to code...');
+}else{
+  alert('YEAHHH, I love to CODE!!');
+}
+var phoneopsys = prompt('Are you an Android or iOS user?');
+console.log('phoneOS is:' + phoneopsys);
+alert('Nice, you like ' + phoneopsys + ', I am an Android user myself.');
 
-  console.log('users answer:' +answer);
+var pcopsys = prompt('What operating system do you use on your Personal Computer, I.E. Windows, Linux, macOS, Many');
+console.log('Operating System is: ' + pcopsys);
+alert('So you use ' + phoneopsys + ' for your Phone system and '+ pcopsys + ' For your PC operating system. Fascinating...');
 
-  if (answer === 'N') {
-    alert('nice try - I love to code...');
-  }else{
-    alert('YEAHHH, I love to CODE!!');
-  }
+var quirky = confirm('Click OK if you are Quirky or Cancel if not. ');
+console.log('Quirky Status is: ' + quirky);
+alert('Your Quirky status is: ' + quirky + ', truth be told, JavaScript is wayyy Qurky! But FUN!');
+
+alert('So to recap, ' + user + ', you said ' + answer + ' to liking to code, your phone OS is ' + phoneopsys + ' your PC OS choice is ' + pcopsys + ' and your Quirky status is ' + quirky + '.');
 </script>
 </html>
